@@ -1,0 +1,7 @@
+name: KeyWhitelister
+version: ${project.version}
+main: gameincluded.keywhitelister.KeyWhitelister
+api-version: 1.13
+load: STARTUP
+authors: [Ruben_Flinterman]
+website: https://www.gameincluded.com
