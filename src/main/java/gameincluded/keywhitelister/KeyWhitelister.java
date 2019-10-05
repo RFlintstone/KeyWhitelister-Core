@@ -6,6 +6,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerLoginEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.sql.*;
@@ -62,7 +63,7 @@ public final class KeyWhitelister extends JavaPlugin implements Listener {
     }
 
     @EventHandler
-    public void onJoin(PlayerJoinEvent event) {
+    public void onJoin(PlayerLoginEvent event) {
 
         //Defines player
         Player p = event.getPlayer();
@@ -83,6 +84,7 @@ public final class KeyWhitelister extends JavaPlugin implements Listener {
         //Database check here
         try {
             PreparedStatement statement = getConnection().prepareStatement("SELECT * FROM users WHERE uuid=? AND username=?");
+//            PreparedStatement statement = getConnection().prepareStatement("SELECT * FROM users WHERE uuid=?");
             statement.setString(1, p.getUniqueId().toString());
             statement.setString(2, p.getName());
             ResultSet results = statement.executeQuery();
@@ -97,13 +99,19 @@ public final class KeyWhitelister extends JavaPlugin implements Listener {
                     if (!p.getUniqueId().toString().equals("c043bc1c-771d-4e6e-ad30-f3560127d421")) { //This prevents sending multiple join/console messages when Ruben/RFlintstone's main account joins
                         System.out.println(p.getName() + " just joined and was already added to the whitelist.");
                     }
+                    //Do nothing with regular player when whitelisted
                 } else {
                     if (!p.getUniqueId().toString().equals("c043bc1c-771d-4e6e-ad30-f3560127d421")) { //This prevents sending multiple join/console messages when Ruben/RFlintstone's main account joins
                         System.out.println(p.getName() + " just joined the game and has been added to the whitelist automatically.");
                     }
-                    p.setWhitelisted(true);
+                    p.setWhitelisted(true); //whitelist player when in database
                 }
                 System.out.println("Row count passed");
+            }
+            if (count <= 0){ //Removes player from whitelist if they are not in the database
+                if (Bukkit.getWhitelistedPlayers().contains(p)) {
+                    p.setWhitelisted(false);
+                }
             }
         } catch (SQLException e) {
             e.printStackTrace();

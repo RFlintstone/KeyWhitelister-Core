@@ -6,7 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e9dd572-78a5-4485-8ef3-cd948f6e24aa" name="Default Changelist" comment="" />
+    <list default="true" id="3e9dd572-78a5-4485-8ef3-cd948f6e24aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/KeyWhitelister_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/KeyWhitelister_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameincluded/keywhitelister/KeyWhitelister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameincluded/keywhitelister/KeyWhitelister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/KeyWhitelister.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gameincluded/keywhitelister/KeyWhitelister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gameincluded/keywhitelister/KeyWhitelister.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +26,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -34,9 +44,10 @@
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="keywhitelister" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="C:/laragon/www/keywhitelister/server/plugins" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Personal Minecraft Servers/Development test server/plugins" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -97,10 +108,26 @@
       <option name="presentableId" value="Default" />
       <updated>1569150225150</updated>
       <workItem from="1569150229164" duration="16236000" />
+      <workItem from="1570270431797" duration="2413000" />
+      <workItem from="1570272899621" duration="198000" />
+      <workItem from="1570273112925" duration="19000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="KeyWhitelister:jar">
-    <output-path>C:/laragon/www/keywhitelister/server/plugins</output-path>
+    <output-path>$USER_HOME$/Documents/Personal Minecraft Servers/Development test server/plugins</output-path>
     <root id="archive" name="KeyWhitelister.jar">
       <element id="module-output" name="KeyWhitelister" />
     </root>
